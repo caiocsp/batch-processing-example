@@ -6,10 +6,13 @@ import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
+import org.springframework.batch.item.file.FlatFileItemReader;
 import org.springframework.batch.item.file.builder.FlatFileItemReaderBuilder;
+import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
 
 /*the @EnableBatchProcessing annotation adds many critical beans that support jobs and save you a lot of leg work. 
 This example uses a memory-based database (provided by @EnableBatchProcessing)*/
