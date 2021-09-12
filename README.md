@@ -22,6 +22,6 @@ the writer(DataSource) creates an ItemWriter. This one is aimed at a JDBC destin
 
 ## To run:
 
-Using Maven, you can run the application by using **./mvnw spring-boot:run** . Alternatively, you can build the JAR file with ./mvnw clean package and then run the JAR file, as follows:
+Using Maven, you can run the application by using **./mvnw spring-boot:run** in terminal. Alternatively, you can build the JAR file with **./mvnw clean package** and then run the JAR file, as follows:
 
     java -jar target/gs-batch-processing-0.1.0.jar
